@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
-import { getUser, logout } from "../../redux/reducer";
+import { getUser, logout } from "../redux/reducer";
 import Button from "@material-ui/core/Button";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
@@ -8,7 +8,10 @@ import axios from "axios";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import { withRouter } from "react-router-dom";
 
-import { API_DOMAIN } from "../../Config";
+import logo from '../assets/redsteel_logo.png';
+import { API_DOMAIN } from "../Config";
+
+import './Header.css';
 
 function HeaderComponent(props) {
   useEffect(() => {
@@ -49,22 +52,9 @@ function HeaderComponent(props) {
         <a href="/#/">
           <img
             id="logo"
-            src="https://static.thenounproject.com/png/337525-200.png"
+            src={logo}
             alt="pic"
           />
-        </a>
-        <a href="/#/">
-          <p className="left-header-1-text">Pixel 4</p>
-        </a>
-
-        <a href="/#/iphone">
-          <p className="left-header-1-text">iPhone 11 Pro</p>
-        </a>
-        <a href="/#/stadia">
-          <p className="left-header-1-text">Stadia</p>
-        </a>
-        <a href="/#/macbookpro-home">
-          <p className="left-header-1-text">MacBook Pro</p>
         </a>
       </div>
 
@@ -83,7 +73,6 @@ function HeaderComponent(props) {
             >
               <img
                 src={props.user.user_image}
-                alt=""
                 className="user-image"
                 alt="pic"
               />

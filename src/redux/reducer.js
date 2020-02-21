@@ -99,9 +99,9 @@ export default function reducer(state = initialState, action) {
     case UPDATE_EMAIL:
       let email = payload;
       return { ...state, email };
-    case ADD_DEVICE_TO_CART:
+    case ADD_ITEM_TO_CART:
       return { ...state, cart: [...state.cart, payload] };
-    case REMOVE_DEVICE_FROM_CART:
+    case REMOVE_ITEM_FROM_CART:
       state.cart.splice(payload, 1);
       return { ...state };
     case CLEAR_CART:
