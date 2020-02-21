@@ -10,7 +10,7 @@ import store from "./redux/store";
 // Dependencies Above //
 
 // Routes Below //
-import HomeComponent from "./Components/HomeComponent";
+import HomeComponent from "./Components/HomeComponent/HomeComponent";
 // Routes Above //
 
 function App() {

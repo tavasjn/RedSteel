@@ -1,0 +1,19 @@
+.featured-line {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.featured-images {
+  height: 75vh;
+  width: 33.3vw;
+  border-left: solid black 1.5px;
+}
+
+.featured-bar{
+    background-color: black;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    height: 5vh;
+}

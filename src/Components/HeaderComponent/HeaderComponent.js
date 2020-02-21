@@ -1,17 +1,33 @@
 import React, { useEffect } from "react";
+import axios from "axios";
+
+// React Redux Below //
+
 import { connect } from "react-redux";
 import { getUser, logout } from "../../redux/reducer";
+import { withRouter } from "react-router-dom";
+
+// React Redux Above //
+
+// ---------------- //
+
+// Material UI Below //
+
+import './Header.css';
 import Button from "@material-ui/core/Button";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
-import axios from "axios";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
-import { withRouter } from "react-router-dom";
 
+// Material UI Above //
+
+// ---------------- //
+
+// Random Imports like photos //
 import logo from '../../assets/redsteel_logo.png';
 import { API_DOMAIN } from "../../Config";
 
-import './Header.css';
+// Random Imports like photos above //
 
 function HeaderComponent(props) {
   useEffect(() => {
@@ -47,7 +63,7 @@ function HeaderComponent(props) {
   };
 
   return (
-    <div id="home-product-page-header-1">
+    <div id="home-product-page-header">
       <div id="left-header-1-stuff">
         <a href="/#/">
           <img
@@ -57,7 +73,18 @@ function HeaderComponent(props) {
           />
         </a>
       </div>
-
+      <div>
+        <p>Shirts</p>
+      </div>
+      <div>
+        <p>Hoodies</p>
+      </div>
+      <div>
+        <p>Hats</p>
+      </div>
+      <div>
+        <p>Backpacks</p>
+      </div>
       <div className="cart-user-icons">
         <div>
           <a href="/#/cart">
