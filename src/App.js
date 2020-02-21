@@ -4,6 +4,8 @@ import "./App.css";
 // Dependencies Below //
 import { Route } from "react-router-dom";
 import { HashRouter } from "react-router-dom";
+import { Provider } from "react-redux";
+import store from "./redux/store";
 
 // Dependencies Above //
 
@@ -14,9 +16,11 @@ import HomeComponent from "./Components/HomeComponent";
 function App() {
   return (
     <div>
-      <HashRouter>
-        <Route exact path="/" component={HomeComponent} />
-      </HashRouter>
+      <Provider store={store}>
+        <HashRouter>
+          <Route exact path="/" component={HomeComponent} />
+        </HashRouter>
+      </Provider>
     </div>
   );
 }
