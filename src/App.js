@@ -1,24 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+
+// Dependencies Below //
+import { Route } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
+
+// Dependencies Above //
+
+// Routes Below //
+import HomeComponent from "./Components/HomeComponent";
+// Routes Above //
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <HashRouter>
+        <Route exact path="/" component={HomeComponent} />
+      </HashRouter>
     </div>
   );
 }
