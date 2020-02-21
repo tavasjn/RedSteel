@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
-import { getUser, logout } from "../redux/reducer";
+import { getUser, logout } from "../../redux/reducer";
 import Button from "@material-ui/core/Button";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
@@ -8,8 +8,8 @@ import axios from "axios";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import { withRouter } from "react-router-dom";
 
-import logo from '../assets/redsteel_logo.png';
-import { API_DOMAIN } from "../Config";
+import logo from '../../assets/redsteel_logo.png';
+import { API_DOMAIN } from "../../Config";
 
 import './Header.css';
 

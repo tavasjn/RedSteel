@@ -1,7 +1,7 @@
 // Home Page //
 import React from "react";
 
-import HeaderComponent from "./HeaderComponent";
+import HeaderComponent from "./HeaderComponent/HeaderComponent";
 
 function HomeComponent() {
   return (
