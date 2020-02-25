@@ -74,16 +74,19 @@ function HeaderComponent(props) {
         </a>
       </div>
       <div>
-        <p>Shirts</p>
+        <a href='/#/shirts'>Shirts</a>
       </div>
       <div>
-        <p>Hoodies</p>
+        <a href='/#/hoodies'>Hoodies</a>
       </div>
       <div>
-        <p>Hats</p>
+        <a href='/#/hats'>Hats</a>
       </div>
       <div>
-        <p>Backpacks</p>
+        <a href='/#/backpacks'>Backpacks</a>
+      </div>
+      <div>
+        <a href='/#/about'>About Us</a>
       </div>
       <div className="cart-user-icons">
         <div>

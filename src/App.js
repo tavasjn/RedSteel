@@ -11,6 +11,9 @@ import store from "./redux/store";
 
 // Routes Below //
 import HomeComponent from "./Components/HomeComponent/HomeComponent";
+import ShirtsComponent from './Components/ShirtsComponent/ShirtsComponent';
+import HoodiesComponent from './Components/HoodiesComponent/HoodiesComponent';
+import HatsComponent from './Components/HatsComponent/HatsComponent';
 // Routes Above //
 
 function App() {
@@ -19,6 +22,9 @@ function App() {
       <Provider store={store}>
         <HashRouter>
           <Route exact path="/" component={HomeComponent} />
+          <Route path="/shirts" component={ShirtsComponent} />
+          <Route path="/hoodies" component={HoodiesComponent} />
+          <Route path="/hats" component={HatsComponent} />
         </HashRouter>
       </Provider>
     </div>

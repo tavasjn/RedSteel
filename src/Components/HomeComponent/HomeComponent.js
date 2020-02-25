@@ -4,6 +4,7 @@ import React from "react";
 import HeaderComponent from "../HeaderComponent/HeaderComponent";
 import FeaturedProductComponent from "../FeaturedProductComponent/FeaturedProductComponent";
 import SeasonalComponent from "../SeasonalComponent/SeasonalComponent";
+import FooterComponent from '../FooterComponent/FooterComponent';
 
 function HomeComponent() {
   return (
@@ -11,6 +12,7 @@ function HomeComponent() {
       <HeaderComponent />
       <FeaturedProductComponent />
       <SeasonalComponent />
+      <FooterComponent />
     </div>
   );
 }
