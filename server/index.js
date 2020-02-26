@@ -56,8 +56,8 @@ passport.use(
         .get("db")
         .get_user_by_auth_id([profile.id])
         .then(res => {
-          console.log("res", res);
-          console.log("profiile", profile);
+          // console.log("res", res);
+          // console.log("profiile", profile);
 
           if (!res[0]) {
             app
@@ -78,8 +78,8 @@ passport.use(
     }
   )
 );
-console.log("session", session);
-console.log("passport", passport);
+// console.log("session", session);
+// console.log("passport", passport);
 passport.serializeUser(function(user, done) {
   done(null, user);
 });
@@ -87,7 +87,7 @@ passport.deserializeUser(function(obj, done) {
   done(null, obj);
 });
 app.get("/api/getUser", (req, res, next) => {
-  console.log(req.session.passport.user);
+  // console.log(req.session.passport.user);
   if (req.session.passport.user) {
     res.status(200).send(req.session.passport.user);
   } else res.sendStatus(500);

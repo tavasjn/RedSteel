@@ -1,10 +1,17 @@
 import React from "react";
 
+import HeaderComponent from '../HeaderComponent/HeaderComponent';
+import FooterComponent from '../FooterComponent/FooterComponent';
+
 function ShirtsComponent() {
   return (
     <div>
       <div>
-          ShirtsComponent
+        <HeaderComponent />
+        <div>
+          {/* Body of page */}
+        </div>
+        <FooterComponent />
       </div>
     </div>
   );

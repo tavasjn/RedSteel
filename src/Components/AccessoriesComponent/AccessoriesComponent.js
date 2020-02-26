@@ -3,7 +3,7 @@ import React from "react";
 import HeaderComponent from '../HeaderComponent/HeaderComponent';
 import FooterComponent from '../FooterComponent/FooterComponent';
 
-function HoodiesComponent() {
+function AccessoriesComponent() {
   return (
     <div>
       <div>
@@ -17,4 +17,4 @@ function HoodiesComponent() {
   );
 }
 
-export default HoodiesComponent;
+export default AccessoriesComponent;

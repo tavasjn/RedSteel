@@ -80,10 +80,7 @@ function HeaderComponent(props) {
         <a href='/#/hoodies'>Hoodies</a>
       </div>
       <div>
-        <a href='/#/hats'>Hats</a>
-      </div>
-      <div>
-        <a href='/#/backpacks'>Backpacks</a>
+        <a href='/#/accessories'>Accessories</a>
       </div>
       <div>
         <a href='/#/about'>About Us</a>
